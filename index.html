@@ -40,13 +40,14 @@
             transform: scale(1.05);
         }
         
-        .submit-card {
-            transition: all 0.3s ease;
+        .canva-hero-card {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            border: 2px solid #ffffff50;
         }
         
-        .submit-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        .canva-hero-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 30px -5px rgba(99, 102, 241, 0.3);
         }
     </style>
 </head>
@@ -83,26 +84,26 @@
         </div>
     </nav>
 
-    <!-- Simple Hero Section -->
+    <!-- Hero Section with Direct Canva Link -->
     <header class="gradient-bg text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
                 <i data-lucide="book-open" class="w-12 h-12"></i>
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold mb-4">Grade 7 English Quarter 1</h1>
-            <p class="text-lg max-w-2xl mx-auto opacity-90 mb-6">
-                Click on any week below to access your Canva lesson. Complete all activities and submit your answers.
+            <p class="text-lg max-w-2xl mx-auto opacity-90 mb-8">
+                Your complete module for the first quarter. Click below to start reading and learning!
             </p>
-            <div class="flex flex-wrap justify-center gap-3">
-                <a href="#weeks" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition action-btn flex items-center space-x-2">
-                    <span>View Lessons</span>
-                    <i data-lucide="arrow-down" class="w-5 h-5"></i>
-                </a>
-                <a href="#submit" class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-blue-800 transition action-btn flex items-center space-x-2">
-                    <i data-lucide="upload-cloud" class="w-5 h-5"></i>
-                    <span>Submit Work</span>
-                </a>
-            </div>
+            
+            <!-- Direct Canva Link Button -->
+            <a href="https://www.canva.com/design/DAHCAiVcnEc/0ZIYz5Iplcx8tJaSlzczCQ/view?utm_content=DAHCAiVcnEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e67072701" 
+               target="_blank" 
+               class="inline-flex items-center space-x-3 bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition action-btn shadow-xl text-lg mb-6">
+                <i data-lucide="external-link" class="w-6 h-6"></i>
+                <span>📖 START LEARNING - OPEN MODULE</span>
+            </a>
+            
+            <p class="text-sm opacity-75">Click the button above to access your Canva module. Bookmark it for easy access!</p>
         </div>
     </header>
 
@@ -129,11 +130,36 @@
         </div>
     </section>
 
-    <!-- Main Content: Weeks Grid -->
-    <section id="weeks" class="py-12">
+    <!-- Module Preview Card -->
+    <section class="py-8">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <a href="https://www.canva.com/design/DAHCAiVcnEc/0ZIYz5Iplcx8tJaSlzczCQ/view?utm_content=DAHCAiVcnEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e67072701" 
+               target="_blank"
+               class="canva-hero-card block bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition-all">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-white/20 p-4 rounded-2xl">
+                            <i data-lucide="palette" class="w-12 h-12"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-1">📘 Grade 7 English Module</h2>
+                            <p class="opacity-90">Full Quarter 1 Module - Click to open in Canva</p>
+                        </div>
+                    </div>
+                    <span class="bg-white text-indigo-600 px-6 py-3 rounded-full font-bold flex items-center space-x-2">
+                        <span>Open Module</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Weekly Lessons Section -->
+    <section id="weeks" class="py-12 bg-slate-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 text-blue-600">📚 Choose Your Week</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Click on any week to open the Canva lesson. Complete the activities and submit your answers.</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 text-blue-600">📚 Weekly Lessons</h2>
+            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Click on any week below to access specific lessons and activities.</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <!-- Week 1 -->
@@ -149,7 +175,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Protagonist vs Antagonist and types of conflict in literature.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 1 →</span>
                             <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
                     </div>
@@ -168,7 +194,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Direct vs Indirect characterization and the STEAL method.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 2 →</span>
                             <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
                     </div>
@@ -187,7 +213,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Story structure, poetic devices, and diction analysis.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 3 →</span>
                             <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
                     </div>
@@ -206,7 +232,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Understanding atmosphere and recurring motifs in texts.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 4 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -225,7 +251,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Point of view and universal truths in literature.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 5 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -244,7 +270,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Sociocultural influences on literary works.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 6 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -263,7 +289,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Purpose, audience, and theme selection strategies.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 7 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -282,7 +308,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Writing techniques and editing strategies.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 8 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -301,7 +327,7 @@
                         </h3>
                         <p class="text-slate-600 text-sm mb-4">Final presentations and quarter-end reflection.</p>
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="text-blue-600 font-semibold">Open Week 9 →</span>
                             <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
                     </div>
@@ -330,7 +356,13 @@
     <footer class="bg-slate-800 text-white py-6">
         <div class="container mx-auto px-4 text-center">
             <p class="mb-2">Grade 7 English Quarter 1 | Interactive E-Module</p>
-            <p class="text-sm opacity-60">© 2024 - Click on any week to access your Canva lesson</p>
+            <p class="text-sm opacity-60">
+                <a href="https://www.canva.com/design/DAHCAiVcnEc/0ZIYz5Iplcx8tJaSlzczCQ/view?utm_content=DAHCAiVcnEc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e67072701" 
+                   target="_blank" 
+                   class="hover:underline">
+                    📘 Access Full Module
+                </a>
+            </p>
         </div>
     </footer>
 
