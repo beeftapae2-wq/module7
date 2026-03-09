@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 7: Selecting Literary Text | Grade 7 English Q1</title>
+    <title>Lesson 7: Selecting Literary Text | Grade 7 English Q1</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -33,17 +33,19 @@
             border: none;
         }
         
-        .canva-placeholder {
-            background: linear-gradient(135deg, #ffe4e6 0%, #fecdd3 100%);
-            border: 3px dashed #e11d48;
-            border-radius: 12px;
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
+        .bg-white20 {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .assessment-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .assessment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
         }
         
         .selection-card {
@@ -65,8 +67,8 @@
                     <i data-lucide="arrow-left" class="w-6 h-6"></i>
                     <span>Back to Home</span>
                 </a>
-                <div class="text-sm font-semibold bg-white/20 px-4 py-2 rounded-full">
-                    Week 7 of 9
+                <div class="text-sm font-semibold bg-white20 px-4 py-2 rounded-full">
+                    Lesson 7 of 9
                 </div>
             </div>
         </div>
@@ -74,59 +76,72 @@
 
     <header class="bg-gradient-to-r from-rose-500 to-red-600 text-white py-12">
         <div class="container mx-auto px-4 text-center">
-            <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
+            <div class="inline-block p-3 bg-white20 rounded-full mb-4">
                 <i data-lucide="search" class="w-12 h-12"></i>
             </div>
-            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Week 7: Selecting Literary Text</h1>
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 7: Selecting Literary Text</h1>
             <p class="text-lg opacity-90">Purpose, Audience, and Theme Selection</p>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8 max-w-5xl">
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <a href="#" class="action-btn bg-blue-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-blue-700">
-                <i data-lucide="clipboard-list" class="w-8 h-8"></i>
-                <span>📝 Pre-Test</span>
+        <!-- Assessment Widgets Row -->
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+            <!-- Pre-Test Widget -->
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-blue-50 border-2 border-blue-200 rounded-xl p-6 text-center hover:bg-blue-100 transition block">
+                <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-blue-800 mb-1">📝 Pre-Test</h3>
+                <p class="text-sm text-blue-600 mb-3">Check what you already know</p>
+                <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
-            
-            <a href="#" class="action-btn bg-purple-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-purple-700">
-                <i data-lucide="edit-3" class="w-8 h-8"></i>
-                <span>📊 Assessment</span>
+
+            <!-- Assessment Widget -->
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-purple-50 border-2 border-purple-200 rounded-xl p-6 text-center hover:bg-purple-100 transition block">
+                <div class="bg-purple-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="edit-3" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-purple-800 mb-1">📊 Assessment</h3>
+                <p class="text-sm text-purple-600 mb-3">Take the lesson quiz</p>
+                <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
-            
-            <a href="#" class="action-btn bg-teal-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-teal-600">
-                <i data-lucide="message-circle" class="w-8 h-8"></i>
-                <span>💭 Reflection</span>
-            </a>
-            
-            <a href="https://classroom.google.com" target="_blank" class="action-btn bg-red-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-red-600">
-                <i data-lucide="upload-cloud" class="w-8 h-8"></i>
-                <span>✅ Submit Work</span>
+
+            <!-- Reflection Widget -->
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-teal-50 border-2 border-teal-200 rounded-xl p-6 text-center hover:bg-teal-100 transition block">
+                <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="message-circle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-teal-800 mb-1">💭 Reflection</h3>
+                <p class="text-sm text-teal-600 mb-3">Share your thoughts</p>
+                <span class="inline-block bg-teal-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
         </div>
 
-        <section class="mb-12">
-            <div class="flex items-center space-x-3 mb-4">
-                <div class="bg-rose-100 p-2 rounded-lg">
-                    <i data-lucide="book-open" class="w-6 h-6 text-rose-600"></i>
-                </div>
-                <h2 class="text-2xl font-bold text-slate-800">Lesson Proper</h2>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-2">
-                <div class="canva-placeholder">
-                    <i data-lucide="image" class="w-16 h-16 text-rose-400 mb-4"></i>
-                    <h3 class="text-xl font-bold text-rose-900 mb-2">Canva Lesson Embed</h3>
-                    <p class="text-rose-700 mb-4">Paste your Week 7 Canva embed code here.</p>
-                    <div class="bg-white/50 p-4 rounded-lg text-left w-full max-w-2xl">
-                        <code class="text-sm text-rose-800">
-                            &lt;!-- Paste your Canva embed code here --&gt;
-                        </code>
+        <!-- Direct Link to Google Classroom for all activities -->
+        <section class="mb-8">
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-white/20 p-3 rounded-full">
+                            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">📚 Access All Activities</h2>
+                            <p class="opacity-90">Pre-Test, Assessment, Reflection & More</p>
+                        </div>
                     </div>
+                    <span class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold flex items-center space-x-2">
+                        <span>OPEN GOOGLE CLASSROOM</span>
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </span>
                 </div>
-            </div>
+            </a>
+            <p class="text-center text-sm text-slate-500 mt-2">Click above to access all your activities in Google Classroom</p>
         </section>
 
+        <!-- Video Resources -->
         <section class="mb-12">
             <div class="flex items-center space-x-3 mb-6">
                 <div class="bg-red-100 p-2 rounded-lg">
@@ -164,6 +179,7 @@
             </div>
         </section>
 
+        <!-- Text Selection Criteria -->
         <section class="mb-12 bg-rose-50 rounded-2xl p-6 border-2 border-rose-200">
             <div class="flex items-center space-x-3 mb-4">
                 <div class="bg-rose-600 text-white p-2 rounded-lg">
@@ -199,28 +215,50 @@
                 </div>
             </div>
             
-            <a href="#" class="inline-flex items-center space-x-2 bg-rose-500 text-white px-6 py-3 rounded-full font-bold hover:bg-rose-600 transition action-btn">
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-rose-500 text-white px-6 py-3 rounded-full font-bold hover:bg-rose-600 transition action-btn">
                 <i data-lucide="external-link" class="w-5 h-5"></i>
-                <span>💬 SHARE YOUR TEXT RECOMMENDATION ON PADLET</span>
+                <span>📝 SHARE YOUR TEXT RECOMMENDATION ON CLASSROOM</span>
             </a>
         </section>
 
+        <!-- Guided Practice -->
+        <section class="mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-amber-500 text-white p-2 rounded-lg">
+                    <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-amber-900">Guided Practice</h2>
+            </div>
+            <p class="text-amber-800 mb-4">Evaluate and select a literary text based on purpose, audience, and theme. Share your selection and reasoning.</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn">
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                    <span>📝 OPEN GOOGLE CLASSROOM</span>
+                </a>
+                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn">
+                    <i data-lucide="download" class="w-5 h-5"></i>
+                    <span>📥 DOWNLOAD WORKSHEET</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Lesson Navigation -->
         <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-            <a href="week6.html" class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 font-semibold">
+            <a href="week6.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
                 <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Week 6: Context</span>
+                <span>Previous Lesson 6</span>
             </a>
             <a href="week8.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
-                <span>Next: Week 8</span>
+                <span>Next Lesson 8</span>
                 <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
         </div>
-
     </main>
 
     <footer class="gradient-bg text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <p class="font-semibold">Week 7: Selecting Literary Text | Grade 7 English Q1</p>
+            <p class="font-semibold">Lesson 7: Selecting Literary Text | Grade 7 English Q1</p>
+            <p class="text-sm opacity-80 mt-2">Choose your next great read! 📚</p>
         </div>
     </footer>
 
