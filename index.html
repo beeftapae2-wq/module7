@@ -17,36 +17,19 @@
             font-family: 'Nunito', sans-serif;
         }
         
-        .canva-embed-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust as needed */
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        
-        .canva-embed-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
         .gradient-bg {
             background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%);
         }
         
         .week-card {
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
         
         .week-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
         }
         
         .action-btn {
@@ -57,35 +40,26 @@
             transform: scale(1.05);
         }
         
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
+        .submit-card {
+            transition: all 0.3s ease;
         }
         
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+        .submit-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Navigation -->
+    <!-- Simple Navigation -->
     <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="flex items-center space-x-2 font-bold text-xl">
+                <div class="flex items-center space-x-2 font-bold text-xl">
                     <i data-lucide="book-open" class="w-8 h-8"></i>
-                    <span class="hidden sm:inline">Grade 7 English Q1</span>
-                    <span class="sm:hidden">G7 Eng Q1</span>
-                </a>
+                    <span>Grade 7 English Q1</span>
+                </div>
                 
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/20 transition">
@@ -93,346 +67,270 @@
                 </button>
 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden md:flex items-center space-x-4">
                     <a href="index.html" class="px-4 py-2 rounded-lg bg-white/20 font-semibold">Home</a>
-                    <div class="relative group">
-                        <button class="px-4 py-2 rounded-lg hover:bg-white/20 flex items-center space-x-1">
-                            <span>Weeks</span>
-                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
-                        </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl hidden group-hover:block text-slate-800 border border-slate-200">
-                            <a href="week1.html" class="block px-4 py-2 hover:bg-blue-50">Week 1: Conflict</a>
-                            <a href="week2.html" class="block px-4 py-2 hover:bg-blue-50">Week 2: Character</a>
-                            <a href="week3.html" class="block px-4 py-2 hover:bg-blue-50">Week 3: Plot & Poetry</a>
-                            <a href="week4.html" class="block px-4 py-2 hover:bg-blue-50">Week 4: Tone & Mood</a>
-                            <a href="week5.html" class="block px-4 py-2 hover:bg-blue-50">Week 5: Figures of Speech</a>
-                            <a href="week6.html" class="block px-4 py-2 hover:bg-blue-50">Week 6: Context</a>
-                            <a href="week7.html" class="block px-4 py-2 hover:bg-blue-50">Week 7: Selection</a>
-                            <a href="week8.html" class="block px-4 py-2 hover:bg-blue-50">Week 8: Composition</a>
-                            <a href="week9.html" class="block px-4 py-2 hover:bg-blue-50">Week 9: Publishing</a>
-                        </div>
-                    </div>
-                    <a href="resources.html" class="px-4 py-2 rounded-lg hover:bg-white/20">Resources</a>
+                    <a href="#weeks" class="px-4 py-2 rounded-lg hover:bg-white/20">Lessons</a>
+                    <a href="#submit" class="px-4 py-2 rounded-lg hover:bg-white/20">Submit</a>
                 </div>
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
-                <a href="index.html" class="block px-4 py-2 rounded-lg bg-white/20 font-semibold">Home</a>
-                <div class="pl-4 space-y-1">
-                    <p class="text-white/80 text-sm font-semibold py-2">Select Week:</p>
-                    <a href="week1.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 1: Conflict</a>
-                    <a href="week2.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 2: Character</a>
-                    <a href="week3.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 3: Plot & Poetry</a>
-                    <a href="week4.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 4: Tone & Mood</a>
-                    <a href="week5.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 5: Figures of Speech</a>
-                    <a href="week6.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 6: Context</a>
-                    <a href="week7.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 7: Selection</a>
-                    <a href="week8.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 8: Composition</a>
-                    <a href="week9.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Week 9: Publishing</a>
-                </div>
-                <a href="resources.html" class="block px-4 py-2 rounded-lg hover:bg-white/20">Resources</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block px-4 py-2 rounded-lg bg-white/20 font-semibold mb-2">Home</a>
+                <a href="#weeks" class="block px-4 py-2 rounded-lg hover:bg-white/20 mb-2">Lessons</a>
+                <a href="#submit" class="block px-4 py-2 rounded-lg hover:bg-white/20">Submit</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="gradient-bg text-white py-12 md:py-20">
+    <!-- Simple Hero Section -->
+    <header class="gradient-bg text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
-                <i data-lucide="graduation-cap" class="w-12 h-12"></i>
+                <i data-lucide="book-open" class="w-12 h-12"></i>
             </div>
-            <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Grade 7 English Quarter 1 Module</h1>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-6">
-                Welcome to your interactive learning journey! Explore literature, develop your skills, and express your creativity through 9 weeks of engaging lessons.
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-4">Grade 7 English Quarter 1</h1>
+            <p class="text-lg max-w-2xl mx-auto opacity-90 mb-6">
+                Click on any week below to access your Canva lesson. Complete all activities and submit your answers.
             </p>
             <div class="flex flex-wrap justify-center gap-3">
                 <a href="#weeks" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition action-btn flex items-center space-x-2">
-                    <span>Start Learning</span>
-                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    <span>View Lessons</span>
+                    <i data-lucide="arrow-down" class="w-5 h-5"></i>
                 </a>
-                <a href="#how-to-use" class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-blue-800 transition action-btn flex items-center space-x-2">
-                    <i data-lucide="help-circle" class="w-5 h-5"></i>
-                    <span>How to Use</span>
+                <a href="#submit" class="bg-blue-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-blue-800 transition action-btn flex items-center space-x-2">
+                    <i data-lucide="upload-cloud" class="w-5 h-5"></i>
+                    <span>Submit Work</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- How to Use Section -->
-    <section id="how-to-use" class="py-12 bg-white">
+    <!-- Quick Submit Section -->
+    <section id="submit" class="py-8 bg-white border-b">
         <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-blue-600">📌 How to Use This Website</h2>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
-                            <div>
-                                <h3 class="font-bold text-lg mb-2">Select Your Week</h3>
-                                <p class="text-slate-600">Click the week you are studying from the menu above. Each week has its own dedicated page.</p>
-                            </div>
+            <div class="bg-blue-50 rounded-2xl p-6 border-2 border-blue-200 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-blue-500 text-white p-3 rounded-full">
+                            <i data-lucide="upload-cloud" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-blue-900">Ready to Submit?</h2>
+                            <p class="text-blue-700">Submit all your completed activities here</p>
                         </div>
                     </div>
-                    
-                    <div class="bg-amber-50 p-6 rounded-xl border-l-4 border-amber-500">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-amber-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
-                            <div>
-                                <h3 class="font-bold text-lg mb-2">Read the Lesson</h3>
-                                <p class="text-slate-600">Scroll through the embedded Canva lesson page like a digital book.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
-                            <div>
-                                <h3 class="font-bold text-lg mb-2">Watch Videos</h3>
-                                <p class="text-slate-600">View the embedded YouTube videos directly on the page without leaving the site.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-500">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
-                            <div>
-                                <h3 class="font-bold text-lg mb-2">Complete Activities</h3>
-                                <p class="text-slate-600">Click the colorful buttons to take Pre-Tests, Assessments, and submit Reflections.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-pink-50 p-6 rounded-xl border-l-4 border-pink-500 md:col-span-2">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-pink-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</div>
-                            <div>
-                                <h3 class="font-bold text-lg mb-2">Submit Your Work</h3>
-                                <p class="text-slate-600">Upload all completed activities to Google Classroom using the button at the bottom of each week's page.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="https://classroom.google.com" target="_blank" class="bg-blue-500 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-600 transition action-btn flex items-center space-x-2 shadow-lg">
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                        <span>OPEN GOOGLE CLASSROOM</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quarter Overview -->
-    <section id="weeks" class="py-12 bg-slate-50">
+    <!-- Main Content: Weeks Grid -->
+    <section id="weeks" class="py-12">
         <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-blue-600">📅 Quarter Overview</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Click on any week below to access the lessons, videos, and activities.</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 text-blue-600">📚 Choose Your Week</h2>
+            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Click on any week to open the Canva lesson. Complete the activities and submit your answers.</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <!-- Week 1 -->
                 <a href="week1.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-red-400 to-pink-500 flex items-center justify-center">
-                        <i data-lucide="swords" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-red-400 to-pink-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 1</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-red-500 uppercase">Week 1</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="swords" class="w-5 h-5 text-red-500 mr-2"></i>
+                            Conflict
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Protagonist vs Antagonist and types of conflict in literature.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Conflict</h3>
-                        <p class="text-slate-600 text-sm">Learn about Protagonist vs Antagonist and types of conflict in literature.</p>
                     </div>
                 </a>
 
                 <!-- Week 2 -->
                 <a href="week2.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
-                        <i data-lucide="users" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 2</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-blue-500 uppercase">Week 2</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="users" class="w-5 h-5 text-blue-500 mr-2"></i>
+                            Character & Characterization
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Direct vs Indirect characterization and the STEAL method.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Character & Characterization</h3>
-                        <p class="text-slate-600 text-sm">Direct vs Indirect characterization and the STEAL method.</p>
                     </div>
                 </a>
 
                 <!-- Week 3 -->
                 <a href="week3.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-green-400 to-teal-500 flex items-center justify-center">
-                        <i data-lucide="line-chart" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-green-400 to-teal-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 3</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-green-500 uppercase">Week 3</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="line-chart" class="w-5 h-5 text-green-500 mr-2"></i>
+                            Plot, Rhyme & Meter
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Story structure, poetic devices, and diction analysis.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs">Available</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Plot, Rhyme & Meter</h3>
-                        <p class="text-slate-600 text-sm">Story structure, poetic devices, and diction analysis.</p>
                     </div>
                 </a>
 
                 <!-- Week 4 -->
                 <a href="week4.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-purple-400 to-violet-500 flex items-center justify-center">
-                        <i data-lucide="cloud-sun" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-purple-400 to-violet-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 4</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-purple-500 uppercase">Week 4</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="cloud-sun" class="w-5 h-5 text-purple-500 mr-2"></i>
+                            Tone, Mood, Style
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Understanding atmosphere and recurring motifs in texts.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Tone, Mood, Style</h3>
-                        <p class="text-slate-600 text-sm">Understanding atmosphere and recurring motifs in texts.</p>
                     </div>
                 </a>
 
                 <!-- Week 5 -->
                 <a href="week5.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-amber-400 to-orange-500 flex items-center justify-center">
-                        <i data-lucide="sparkles" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-amber-400 to-orange-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 5</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-amber-500 uppercase">Week 5</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-amber-500 mr-2"></i>
+                            Figures of Speech
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Point of view and universal truths in literature.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Figures of Speech</h3>
-                        <p class="text-slate-600 text-sm">Point of view and universal truths in literature.</p>
                     </div>
                 </a>
 
                 <!-- Week 6 -->
                 <a href="week6.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-cyan-400 to-blue-500 flex items-center justify-center">
-                        <i data-lucide="globe" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-cyan-400 to-blue-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 6</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-cyan-500 uppercase">Week 6</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="globe" class="w-5 h-5 text-cyan-500 mr-2"></i>
+                            Biographical & Historical Context
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Sociocultural influences on literary works.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Biographical & Historical Context</h3>
-                        <p class="text-slate-600 text-sm">Sociocultural influences on literary works.</p>
                     </div>
                 </a>
 
                 <!-- Week 7 -->
                 <a href="week7.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-rose-400 to-red-500 flex items-center justify-center">
-                        <i data-lucide="search" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-rose-400 to-red-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 7</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-rose-500 uppercase">Week 7</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="search" class="w-5 h-5 text-rose-500 mr-2"></i>
+                            Selecting Literary Text
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Purpose, audience, and theme selection strategies.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Selecting Literary Text</h3>
-                        <p class="text-slate-600 text-sm">Purpose, audience, and theme selection strategies.</p>
                     </div>
                 </a>
 
                 <!-- Week 8 -->
                 <a href="week8.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-indigo-400 to-purple-500 flex items-center justify-center">
-                        <i data-lucide="pen-tool" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-indigo-400 to-purple-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 8</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-indigo-500 uppercase">Week 8</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="pen-tool" class="w-5 h-5 text-indigo-500 mr-2"></i>
+                            Composition & Revision
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Writing techniques and editing strategies.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Composition & Revision</h3>
-                        <p class="text-slate-600 text-sm">Writing techniques and editing strategies.</p>
                     </div>
                 </a>
 
                 <!-- Week 9 -->
                 <a href="week9.html" class="week-card bg-white rounded-xl shadow-md overflow-hidden block">
-                    <div class="h-32 bg-gradient-to-r from-emerald-400 to-green-500 flex items-center justify-center">
-                        <i data-lucide="check-circle" class="w-16 h-16 text-white"></i>
+                    <div class="h-24 bg-gradient-to-r from-emerald-400 to-green-500 flex items-center justify-between px-6">
+                        <span class="text-white font-bold text-lg">Week 9</span>
+                        <i data-lucide="external-link" class="w-5 h-5 text-white"></i>
                     </div>
                     <div class="p-6">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="text-sm font-bold text-emerald-500 uppercase">Week 9</span>
-                            <i data-lucide="arrow-right-circle" class="w-5 h-5 text-slate-400"></i>
+                        <h3 class="text-xl font-bold mb-2 flex items-center">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-2"></i>
+                            Publishing & Reflection
+                        </h3>
+                        <p class="text-slate-600 text-sm mb-4">Final presentations and quarter-end reflection.</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-blue-600 font-semibold">Open Canva Lesson →</span>
+                            <span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded-full text-xs">Coming Soon</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Publishing & Reflection</h3>
-                        <p class="text-slate-600 text-sm">Final presentations and quarter-end reflection.</p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Important Links -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-blue-600">🔗 Important Links</h2>
-            
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <a href="https://classroom.google.com" target="_blank" class="bg-red-50 border-2 border-red-200 p-6 rounded-xl text-center hover:bg-red-100 transition action-btn group">
-                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
-                        <i data-lucide="school" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-red-700 mb-2">Google Classroom</h3>
-                    <p class="text-sm text-slate-600">Submit all assignments here</p>
-                </a>
-
-                <a href="https://padlet.com" target="_blank" class="bg-teal-50 border-2 border-teal-200 p-6 rounded-xl text-center hover:bg-teal-100 transition action-btn group">
-                    <div class="w-16 h-16 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
-                        <i data-lucide="message-square" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-teal-700 mb-2">Padlet Board</h3>
-                    <p class="text-sm text-slate-600">Post reflections & interact</p>
-                </a>
-
-                <a href="resources.html" class="bg-purple-50 border-2 border-purple-200 p-6 rounded-xl text-center hover:bg-purple-100 transition action-btn group">
-                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
-                        <i data-lucide="folder-open" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="font-bold text-lg text-purple-700 mb-2">Answer Keys</h3>
-                    <p class="text-sm text-slate-600">Check your answers here</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Help Section -->
-    <section class="py-12 bg-slate-100">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <div class="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-amber-400">
-                <h2 class="text-2xl font-bold mb-4 flex items-center text-amber-600">
-                    <i data-lucide="help-circle" class="w-6 h-6 mr-2"></i>
-                    🆘 Need Help?
-                </h2>
-                <ul class="space-y-3 text-slate-700">
-                    <li class="flex items-start">
-                        <i data-lucide="alert-circle" class="w-5 h-5 mr-2 mt-0.5 text-amber-500 flex-shrink-0"></i>
-                        <span>If a button doesn't work, refresh the page or try Chrome browser.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="message-circle" class="w-5 h-5 mr-2 mt-0.5 text-amber-500 flex-shrink-0"></i>
-                        <span>If you're stuck, post a comment in Google Classroom or message your teacher.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i data-lucide="wifi-off" class="w-5 h-5 mr-2 mt-0.5 text-amber-500 flex-shrink-0"></i>
-                        <span>If you have no internet, do activities in your notebook and submit when back online.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-8">
+    <!-- Submit Section (Bottom) -->
+    <section class="py-12 bg-blue-600">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-2 font-semibold">Grade 7 English Quarter 1 | Interactive E-Module</p>
-            <p class="text-sm opacity-80">© 2024 - Designed for Grade 7 Students</p>
-            <div class="mt-4 flex justify-center space-x-4">
-                <i data-lucide="heart" class="w-5 h-5"></i>
-                <span class="text-sm">Keep Learning!</span>
+            <div class="max-w-2xl mx-auto text-white">
+                <i data-lucide="check-circle" class="w-16 h-16 mx-auto mb-4"></i>
+                <h2 class="text-3xl font-bold mb-4">Finished Your Activities?</h2>
+                <p class="text-lg mb-6 opacity-90">Submit all your completed work through Google Classroom</p>
+                <a href="https://classroom.google.com" target="_blank" class="inline-flex items-center space-x-2 bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-blue-50 transition action-btn shadow-xl text-lg">
+                    <i data-lucide="upload-cloud" class="w-6 h-6"></i>
+                    <span>GO TO GOOGLE CLASSROOM</span>
+                </a>
+                <p class="text-sm mt-4 opacity-75">Make sure you're logged in with your school account</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="bg-slate-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Grade 7 English Quarter 1 | Interactive E-Module</p>
+            <p class="text-sm opacity-60">© 2024 - Click on any week to access your Canva lesson</p>
         </div>
     </footer>
 
@@ -441,9 +339,11 @@
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
         // Initialize Lucide icons
         lucide.createIcons();
