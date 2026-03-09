@@ -1,260 +1,266 @@
-!DOCTYPE html
-html lang=en
-head
-    meta charset=UTF-8
-    meta name=viewport content=width=device-width, initial-scale=1.0
-    titleWeek 1 Conflict  Grade 7 English Q1title
-    script src=httpscdn.tailwindcss.comscript
-    script src=httpsunpkg.comlucide@latestscript
-    style
-        @import url('httpsfonts.googleapis.comcss2family=Nunitowght@400;600;700;800&family=Open+Sanswght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Conflict - Grade 7 English Q1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
         
-        body { font-family 'Open Sans', sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-family 'Nunito', sans-serif; }
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
         
-        .gradient-bg { background linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
-        .action-btn { transition all 0.3s ease; }
-        .action-btnhover { transform translateY(-2px); box-shadow 0 10px 20px rgba(0,0,0,0.1); }
+        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+        .action-btn { transition: all 0.3s ease; }
+        .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         
         .video-container {
-            position relative;
-            padding-bottom 56.25%;
-            height 0;
-            overflow hidden;
-            border-radius 12px;
-            background #f1f5f9;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #f1f5f9;
         }
         .video-container iframe {
-            position absolute;
-            top 0;
-            left 0;
-            width 100%;
-            height 100%;
-            border none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
         
         .canva-placeholder {
-            background linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-            border 3px dashed #6366f1;
-            border-radius 12px;
-            min-height 400px;
-            display flex;
-            flex-direction column;
-            align-items center;
-            justify-content center;
-            text-align center;
-            padding 2rem;
+            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            border: 3px dashed #6366f1;
+            border-radius: 12px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
         }
-    style
-head
-body class=bg-slate-50 text-slate-800
-
-    !-- Navigation (Same as index.html) --
-    nav class=gradient-bg text-white sticky top-0 z-50 shadow-lg
-        div class=container mx-auto px-4
-            div class=flex justify-between items-center h-16
-                a href=index.html class=flex items-center space-x-2 font-bold text-xl
-                    i data-lucide=arrow-left class=w-6 h-6i
-                    spanBack to Homespan
-                a
-                div class=text-sm font-semibold bg-white20 px-4 py-2 rounded-full
-                    Week 1 of 9
-                div
-            div
-        div
-    nav
-
-    !-- Week Header --
-    header class=bg-gradient-to-r from-red-500 to-pink-600 text-white py-12
-        div class=container mx-auto px-4 text-center
-            div class=inline-block p-3 bg-white20 rounded-full mb-4
-                i data-lucide=swords class=w-12 h-12i
-            div
-            h1 class=text-3xl mdtext-4xl font-extrabold mb-2Week 1 Conflicth1
-            p class=text-lg opacity-90Understanding Protagonist vs Antagonist and Types of Conflictp
-        div
-    header
-
-    main class=container mx-auto px-4 py-8 max-w-5xl
         
-        !-- Action Buttons Grid --
-        div class=grid mdgrid-cols-2 lggrid-cols-4 gap-4 mb-8
-            a href=# class=action-btn bg-blue-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hoverbg-blue-700
-                i data-lucide=clipboard-list class=w-8 h-8i
-                span📝 Pre-Testspan
-                span class=text-xs font-normal opacity-90Click to Startspan
-            a
+        .bg-white20 {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .bg-white50 {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2 font-bold text-xl">
+                    <i data-lucide="arrow-left" class="w-6 h-6"></i>
+                    <span>Back to Home</span>
+                </a>
+                <div class="text-sm font-semibold bg-white20 px-4 py-2 rounded-full">
+                    Week 1 of 9
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Week Header -->
+    <header class="bg-gradient-to-r from-red-500 to-pink-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-block p-3 bg-white20 rounded-full mb-4">
+                <i data-lucide="swords" class="w-12 h-12"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Week 1: Conflict</h1>
+            <p class="text-lg opacity-90">Understanding Protagonist vs Antagonist and Types of Conflict</p>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Action Buttons Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <a href="#" class="action-btn bg-blue-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-blue-700">
+                <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+                <span>📝 Pre-Test</span>
+                <span class="text-xs font-normal opacity-90">Click to Start</span>
+            </a>
             
-            a href=# class=action-btn bg-purple-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hoverbg-purple-700
-                i data-lucide=edit-3 class=w-8 h-8i
-                span📊 Assessmentspan
-                span class=text-xs font-normal opacity-90Google Formspan
-            a
+            <a href="#" class="action-btn bg-purple-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-purple-700">
+                <i data-lucide="edit-3" class="w-8 h-8"></i>
+                <span>📊 Assessment</span>
+                <span class="text-xs font-normal opacity-90">Google Form</span>
+            </a>
             
-            a href=# class=action-btn bg-teal-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hoverbg-teal-600
-                i data-lucide=message-circle class=w-8 h-8i
-                span💭 Reflectionspan
-                span class=text-xs font-normal opacity-90Padlet Boardspan
-            a
+            <a href="#" class="action-btn bg-teal-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-teal-600">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+                <span>💭 Reflection</span>
+                <span class="text-xs font-normal opacity-90">Padlet Board</span>
+            </a>
             
-            a href=httpsclassroom.google.com target=_blank class=action-btn bg-red-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hoverbg-red-600
-                i data-lucide=upload-cloud class=w-8 h-8i
-                span✅ Submit Workspan
-                span class=text-xs font-normal opacity-90Classroomspan
-            a
-        div
-
-        !-- Canva Embed Section --
-        section class=mb-12
-            div class=flex items-center space-x-3 mb-4
-                div class=bg-indigo-100 p-2 rounded-lg
-                    i data-lucide=book-open class=w-6 h-6 text-indigo-600i
-                div
-                h2 class=text-2xl font-bold text-slate-800Lesson Properh2
-            div
-            div class=bg-white rounded-2xl shadow-lg p-2
-                !-- CANVA EMBED PLACEHOLDER --
-                div class=canva-placeholder
-                    i data-lucide=image class=w-16 h-16 text-indigo-400 mb-4i
-                    h3 class=text-xl font-bold text-indigo-900 mb-2Canva Lesson Embedh3
-                    p class=text-indigo-700 mb-4 max-w-mdPaste your Canva embed code here. Students will scroll through your designed lesson like a digital book.p
-                    div class=bg-white50 p-4 rounded-lg text-left w-full max-w-2xl overflow-x-auto
-                        code class=text-sm text-indigo-800
-                            &lt;iframe src=YOUR_CANVA_LINK_HERE ...&gt;&lt;iframe&gt;
-                        code
-                    div
-                div
-                !-- END CANVA PLACEHOLDER --
-            div
-        section
-
-        !-- Video Resources --
-        section class=mb-12
-            div class=flex items-center space-x-3 mb-6
-                div class=bg-red-100 p-2 rounded-lg
-                    i data-lucide=youtube class=w-6 h-6 text-red-600i
-                div
-                h2 class=text-2xl font-bold text-slate-800Video Resourcesh2
-            div
+            <a href="https://classroom.google.com" target="_blank" class="action-btn bg-red-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-red-600">
+                <i data-lucide="upload-cloud" class="w-8 h-8"></i>
+                <span>✅ Submit Work</span>
+                <span class="text-xs font-normal opacity-90">Classroom</span>
+            </a>
+        </div>
+        
+        <!-- Canva Embed Section -->
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-indigo-100 p-2 rounded-lg">
+                    <i data-lucide="book-open" class="w-6 h-6 text-indigo-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Lesson Proper</h2>
+            </div>
             
-            div class=grid mdgrid-cols-2 gap-6
-                !-- Video 1 --
-                div class=bg-white rounded-xl shadow-md overflow-hidden
-                    div class=video-container
-                        iframe src=httpswww.youtube.comembed5A9QevUDFzU 
-                                title=Protagonist vs Antagonist Explained 
-                                allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
-                                allowfullscreen
-                        iframe
-                    div
-                    div class=p-4
-                        h3 class=font-bold text-lg mb-1Protagonist vs Antagonist Explainedh3
-                        p class=text-sm text-slate-600Learn the difference between the hero and the villain in stories.p
-                    div
-                div
-
-                !-- Video 2 --
-                div class=bg-white rounded-xl shadow-md overflow-hidden
-                    div class=video-container
-                        iframe src=httpswww.youtube.comembed5A9QevUDFzU 
-                                title=Direct vs Indirect Characterization 
-                                allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
-                                allowfullscreen
-                        iframe
-                    div
-                    div class=p-4
-                        h3 class=font-bold text-lg mb-1Direct vs Indirect Characterizationh3
-                        p class=text-sm text-slate-600How authors reveal character traits to readers.p
-                    div
-                div
-
-                !-- Video 3 --
-                div class=bg-white rounded-xl shadow-md overflow-hidden
-                    div class=video-container
-                        iframe src=httpswww.youtube.comembed5A9QevUDFzU 
-                                title=Snack Attack Pixar 
-                                allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
-                                allowfullscreen
-                        iframe
-                    div
-                    div class=p-4
-                        h3 class=font-bold text-lg mb-1Snack Attack (Pixar Short)h3
-                        p class=text-sm text-slate-600Watch and identify the conflict in this animated short.p
-                    div
-                div
-
-                !-- Video 4 --
-                div class=bg-white rounded-xl shadow-md overflow-hidden
-                    div class=video-container
-                        iframe src=httpswww.youtube.comembed5A9QevUDFzU 
-                                title=Umbrella Pixar Short Film 
-                                allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture 
-                                allowfullscreen
-                        iframe
-                    div
-                    div class=p-4
-                        h3 class=font-bold text-lg mb-1Umbrella (Pixar Short Film)h3
-                        p class=text-sm text-slate-600Analyze the internal and external conflicts presented.p
-                    div
-                div
-            div
-        section
-
-        !-- Guided Practice --
-        section class=mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200
-            div class=flex items-center space-x-3 mb-4
-                div class=bg-amber-500 text-white p-2 rounded-lg
-                    i data-lucide=pen-tool class=w-6 h-6i
-                div
-                h2 class=text-2xl font-bold text-amber-900Guided Practiceh2
-            div
-            p class=text-amber-800 mb-4Complete the practice activities below. Share your answers on Padlet!p
-            a href=# class=inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hoverbg-amber-600 transition action-btn
-                i data-lucide=external-link class=w-5 h-5i
-                span💬 CLICK HERE TO POST ON PADLETspan
-            a
-        section
-
-        !-- Extra Activity --
-        section class=mb-12 bg-pink-50 rounded-2xl p-6 border-2 border-pink-200
-            div class=flex items-center space-x-3 mb-4
-                div class=bg-pink-500 text-white p-2 rounded-lg
-                    i data-lucide=palette class=w-6 h-6i
-                div
-                h2 class=text-2xl font-bold text-pink-900Extra Activityh2
-            div
-            p class=text-pink-800 mb-4Create a visual representation of a conflict from your favorite book or movie.p
-            div class=flex flex-wrap gap-3
-                a href=# class=inline-flex items-center space-x-2 bg-pink-500 text-white px-6 py-3 rounded-full font-bold hoverbg-pink-600 transition action-btn
-                    i data-lucide=upload class=w-5 h-5i
-                    span🎨 UPLOAD TO CLASSROOMspan
-                a
-            div
-        section
-
-        !-- Week Navigation --
-        div class=flex justify-between items-center pt-8 border-t border-slate-200
-            a href=index.html class=flex items-center space-x-2 text-slate-600 hovertext-blue-600 font-semibold
-                i data-lucide=arrow-left class=w-5 h-5i
-                spanHomespan
-            a
-            a href=week2.html class=flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hoverbg-blue-700 transition action-btn
-                spanNext Week 2span
-                i data-lucide=arrow-right class=w-5 h-5i
-            a
-        div
-
-    main
-
-    footer class=gradient-bg text-white py-8 mt-12
-        div class=container mx-auto px-4 text-center
-            p class=font-semiboldWeek 1 Conflict  Grade 7 English Q1p
-            p class=text-sm opacity-80 mt-2Keep up the great work! 📚p
-        div
-    footer
-
-    script
+            <div class="bg-white rounded-2xl shadow-lg p-2">
+                <!-- CANVA EMBED PLACEHOLDER -->
+                <div class="canva-placeholder">
+                    <i data-lucide="image" class="w-16 h-16 text-indigo-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Canva Lesson Embed</h3>
+                    <p class="text-indigo-700 mb-4 max-w-md">Paste your Canva embed code here. Students will scroll through your designed lesson like a digital book.</p>
+                    <div class="bg-white50 p-4 rounded-lg text-left w-full max-w-2xl overflow-x-auto">
+                        <code class="text-sm text-indigo-800">
+                            &lt;iframe src="YOUR_CANVA_LINK_HERE" ...&gt;&lt;/iframe&gt;
+                        </code>
+                    </div>
+                </div>
+                <!-- END CANVA PLACEHOLDER -->
+            </div>
+        </section>
+        
+        <!-- Video Resources -->
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-red-100 p-2 rounded-lg">
+                    <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Video Resources</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Video 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Protagonist vs Antagonist Explained" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Protagonist vs Antagonist Explained</h3>
+                        <p class="text-sm text-slate-600">Learn the difference between the hero and the villain in stories.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Direct vs Indirect Characterization" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Direct vs Indirect Characterization</h3>
+                        <p class="text-sm text-slate-600">How authors reveal character traits to readers.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Snack Attack Pixar" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Snack Attack (Pixar Short)</h3>
+                        <p class="text-sm text-slate-600">Watch and identify the conflict in this animated short.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Umbrella Pixar Short Film" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Umbrella (Pixar Short Film)</h3>
+                        <p class="text-sm text-slate-600">Analyze the internal and external conflicts presented.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Guided Practice -->
+        <section class="mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-amber-500 text-white p-2 rounded-lg">
+                    <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-amber-900">Guided Practice</h2>
+            </div>
+            <p class="text-amber-800 mb-4">Complete the practice activities below. Share your answers on Padlet!</p>
+            <a href="#" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
+                <span>💬 CLICK HERE TO POST ON PADLET</span>
+            </a>
+        </section>
+        
+        <!-- Extra Activity -->
+        <section class="mb-12 bg-pink-50 rounded-2xl p-6 border-2 border-pink-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-pink-500 text-white p-2 rounded-lg">
+                    <i data-lucide="palette" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-pink-900">Extra Activity</h2>
+            </div>
+            <p class="text-pink-800 mb-4">Create a visual representation of a conflict from your favorite book or movie.</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="#" class="inline-flex items-center space-x-2 bg-pink-500 text-white px-6 py-3 rounded-full font-bold hover:bg-pink-600 transition action-btn">
+                    <i data-lucide="upload" class="w-5 h-5"></i>
+                    <span>🎨 UPLOAD TO CLASSROOM</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Week Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-slate-200">
+            <a href="index.html" class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 font-semibold">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span>Home</span>
+            </a>
+            <a href="week2.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+                <span>Next Week 2</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </main>
+    
+    <footer class="gradient-bg text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-semibold">Week 1: Conflict - Grade 7 English Q1</p>
+            <p class="text-sm opacity-80 mt-2">Keep up the great work! 📚</p>
+        </div>
+    </footer>
+    
+    <script>
         lucide.createIcons();
-    script
-body
-html
+    </script>
+</body>
+</html>
