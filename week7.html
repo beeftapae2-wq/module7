@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7: Selecting Literary Text | Grade 7 English Q1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
+        
+        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+        .action-btn { transition: all 0.3s ease; }
+        .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #f1f5f9;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .canva-placeholder {
+            background: linear-gradient(135deg, #ffe4e6 0%, #fecdd3 100%);
+            border: 3px dashed #e11d48;
+            border-radius: 12px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .selection-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .selection-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2 font-bold text-xl">
+                    <i data-lucide="arrow-left" class="w-6 h-6"></i>
+                    <span>Back to Home</span>
+                </a>
+                <div class="text-sm font-semibold bg-white/20 px-4 py-2 rounded-full">
+                    Week 7 of 9
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-rose-500 to-red-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
+                <i data-lucide="search" class="w-12 h-12"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Week 7: Selecting Literary Text</h1>
+            <p class="text-lg opacity-90">Purpose, Audience, and Theme Selection</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+            <a href="#" class="action-btn bg-blue-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-blue-700">
+                <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+                <span>📝 Pre-Test</span>
+            </a>
+            
+            <a href="#" class="action-btn bg-purple-600 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-purple-700">
+                <i data-lucide="edit-3" class="w-8 h-8"></i>
+                <span>📊 Assessment</span>
+            </a>
+            
+            <a href="#" class="action-btn bg-teal-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-teal-600">
+                <i data-lucide="message-circle" class="w-8 h-8"></i>
+                <span>💭 Reflection</span>
+            </a>
+            
+            <a href="https://classroom.google.com" target="_blank" class="action-btn bg-red-500 text-white p-4 rounded-xl text-center font-bold flex flex-col items-center space-y-2 hover:bg-red-600">
+                <i data-lucide="upload-cloud" class="w-8 h-8"></i>
+                <span>✅ Submit Work</span>
+            </a>
+        </div>
+
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-rose-100 p-2 rounded-lg">
+                    <i data-lucide="book-open" class="w-6 h-6 text-rose-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Lesson Proper</h2>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-2">
+                <div class="canva-placeholder">
+                    <i data-lucide="image" class="w-16 h-16 text-rose-400 mb-4"></i>
+                    <h3 class="text-xl font-bold text-rose-900 mb-2">Canva Lesson Embed</h3>
+                    <p class="text-rose-700 mb-4">Paste your Week 7 Canva embed code here.</p>
+                    <div class="bg-white/50 p-4 rounded-lg text-left w-full max-w-2xl">
+                        <code class="text-sm text-rose-800">
+                            &lt;!-- Paste your Canva embed code here --&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-red-100 p-2 rounded-lg">
+                    <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Video Resources</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Choosing the Right Book" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">How to Select Literature</h3>
+                        <p class="text-sm text-slate-600">Strategies for choosing appropriate texts.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                                title="Purpose and Audience" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">Purpose and Audience</h3>
+                        <p class="text-sm text-slate-600">Understanding why and for whom we read.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 bg-rose-50 rounded-2xl p-6 border-2 border-rose-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-rose-600 text-white p-2 rounded-lg">
+                    <i data-lucide="filter" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-rose-900">Text Selection Criteria</h2>
+            </div>
+            <p class="text-rose-800 mb-4">Use these criteria to evaluate and select literary texts:</p>
+            
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+                <div class="selection-card bg-white p-4 rounded-xl shadow-sm border-2 border-transparent hover:border-rose-300">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-3">
+                        <i data-lucide="target" class="w-6 h-6 text-rose-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Purpose</h3>
+                    <p class="text-sm text-slate-600">Why are you reading this? What will you learn?</p>
+                </div>
+                
+                <div class="selection-card bg-white p-4 rounded-xl shadow-sm border-2 border-transparent hover:border-rose-300">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-3">
+                        <i data-lucide="users" class="w-6 h-6 text-rose-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Audience</h3>
+                    <p class="text-sm text-slate-600">Who is this written for? Is it age-appropriate?</p>
+                </div>
+                
+                <div class="selection-card bg-white p-4 rounded-xl shadow-sm border-2 border-transparent hover:border-rose-300">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mb-3">
+                        <i data-lucide="heart" class="w-6 h-6 text-rose-600"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Theme</h3>
+                    <p class="text-sm text-slate-600">What universal truths does it explore?</p>
+                </div>
+            </div>
+            
+            <a href="#" class="inline-flex items-center space-x-2 bg-rose-500 text-white px-6 py-3 rounded-full font-bold hover:bg-rose-600 transition action-btn">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
+                <span>💬 SHARE YOUR TEXT RECOMMENDATION ON PADLET</span>
+            </a>
+        </section>
+
+        <div class="flex justify-between items-center pt-8 border-t border-slate-200">
+            <a href="week6.html" class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 font-semibold">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span>Week 6: Context</span>
+            </a>
+            <a href="week8.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+                <span>Next: Week 8</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="gradient-bg text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-semibold">Week 7: Selecting Literary Text | Grade 7 English Q1</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
