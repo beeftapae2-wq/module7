@@ -8,21 +8,21 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
-        
-        body { font-family: 'Open Sans', sans-serif; }
+
+        body { font-family: 'Open Sans', sans-serif; background-color: #f8fafc; color: #1e293b; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
-        
-        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+
+        .gradient-bg { background: linear-gradient(135deg, #059669 0%, #10b981 50%, #fbbf24 100%); }
         .action-btn { transition: all 0.3s ease; }
         .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            background: #f1f5f9;
+            background: #e2e8f0;
         }
         .video-container iframe {
             position: absolute;
@@ -32,25 +32,32 @@
             height: 100%;
             border: none;
         }
-        
+
         .bg-white20 {
             background-color: rgba(255, 255, 255, 0.2);
         }
-        
+
         .assessment-card {
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
-        
         .assessment-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #3b82f6;
+            border-color: #10b981;
+        }
+        .plot-card, .poetry-card {
+            transition: all 0.2s ease;
+        }
+        .plot-card:hover, .poetry-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- Navigation -->
     <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
@@ -65,31 +72,29 @@
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-green-500 to-teal-600 text-white py-12">
+    <!-- Lesson Header -->
+    <header class="bg-gradient-to-r from-emerald-600 to-teal-500 text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white20 rounded-full mb-4">
                 <i data-lucide="line-chart" class="w-12 h-12"></i>
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 3: Plot, Rhyme & Meter</h1>
-            <p class="text-lg opacity-90">Story Structure and Poetic Devices</p>
+            <p class="text-lg opacity-90">Understanding Story Structure and the Music of Poetry</p>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8 max-w-5xl">
-        
+
         <!-- Assessment Widgets Row -->
         <div class="grid md:grid-cols-3 gap-4 mb-8">
-            <!-- Pre-Test Widget -->
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-blue-50 border-2 border-blue-200 rounded-xl p-6 text-center hover:bg-blue-100 transition block">
                 <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                     <i data-lucide="clipboard-list" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-bold text-lg text-blue-800 mb-1">📝 Pre-Test</h3>
-                <p class="text-sm text-blue-600 mb-3">Check what you already know</p>
+                <p class="text-sm text-blue-600 mb-3">Check what you know about plot and poetry</p>
                 <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
-
-            <!-- Assessment Widget -->
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-purple-50 border-2 border-purple-200 rounded-xl p-6 text-center hover:bg-purple-100 transition block">
                 <div class="bg-purple-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                     <i data-lucide="edit-3" class="w-8 h-8"></i>
@@ -98,8 +103,6 @@
                 <p class="text-sm text-purple-600 mb-3">Take the lesson quiz</p>
                 <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
-
-            <!-- Reflection Widget -->
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="assessment-card bg-teal-50 border-2 border-teal-200 rounded-xl p-6 text-center hover:bg-teal-100 transition block">
                 <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                     <i data-lucide="message-circle" class="w-8 h-8"></i>
@@ -110,7 +113,7 @@
             </a>
         </div>
 
-        <!-- Direct Link to Google Classroom for all activities -->
+        <!-- Direct Link to Google Classroom -->
         <section class="mb-8">
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                 <div class="flex items-center justify-between flex-wrap gap-4">
@@ -129,106 +132,123 @@
                     </span>
                 </div>
             </a>
-            <p class="text-center text-sm text-slate-500 mt-2">Click above to access all your activities in Google Classroom</p>
         </section>
 
-        <!-- Video Resources -->
+        <!-- ===== VIDEO RESOURCES: PLOT (4 VIDEOS) ===== -->
         <section class="mb-12">
             <div class="flex items-center space-x-3 mb-6">
                 <div class="bg-red-100 p-2 rounded-lg">
                     <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-slate-800">Video Resources</h2>
+                <h2 class="text-2xl font-bold text-slate-800">📽️ Plot in Action: Pixar Shorts</h2>
             </div>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Video 1: Snack Attack -->
+                <div class="plot-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Snack Attack Pixar" 
-                                allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/38y_1EWIE9I" title="Snack Attack - Pixar Short" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Snack Attack (Pixar)</h3>
-                        <p class="text-sm text-slate-600">Analyze plot elements in this short film.</p>
+                        <h3 class="font-bold text-lg mb-1 text-amber-700">🍪 Snack Attack</h3>
+                        <p class="text-sm text-slate-600"><span class="font-semibold">Analyze:</span> Exposition, Rising Action, Climax, Falling Action, Resolution. Can you spot the twist?</p>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                
+                <!-- Video 2: Plot Structure Explained -->
+                <div class="plot-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Umbrella Pixar" 
-                                allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/FXRltEeU6_U" title="Plot Structure Explained" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Umbrella (Pixar)</h3>
-                        <p class="text-sm text-slate-600">Identify exposition, rising action, and climax.</p>
+                        <h3 class="font-bold text-lg mb-1 text-blue-700">📈 Plot Structure Explained</h3>
+                        <p class="text-sm text-slate-600">Learn the 5 parts of a plot diagram and how they build a story.</p>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                
+                <!-- Video 3: Umbrella -->
+                <div class="plot-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Glued Pixar" 
-                                allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/rW2g5cwxrqQ" title="Umbrella - Pixar Short" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Glued (Pixar Short)</h3>
-                        <p class="text-sm text-slate-600">Plot analysis practice.</p>
+                        <h3 class="font-bold text-lg mb-1 text-indigo-700">☔ Umbrella</h3>
+                        <p class="text-sm text-slate-600">A beautiful short film. Identify the main conflict and how the plot unfolds.</p>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                
+                <!-- Video 4: Glued -->
+                <div class="plot-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Piper Pixar" 
-                                allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/WIPV1iwzrzg" title="Glued - Pixar Short" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Piper (Pixar)</h3>
-                        <p class="text-sm text-slate-600">Character development and plot.</p>
+                        <h3 class="font-bold text-lg mb-1 text-purple-700">🖇️ Glued</h3>
+                        <p class="text-sm text-slate-600">Watch and map out the rising action and climax. A funny take on a mother-son relationship.</p>
                     </div>
                 </div>
             </div>
+            
+            <div class="mt-4 bg-yellow-50 p-4 rounded-xl border border-yellow-200">
+                <p class="text-sm text-yellow-700 flex items-start gap-2"><i data-lucide="lightbulb" class="w-5 h-5 flex-shrink-0 mt-0.5"></i><span><span class="font-bold">Practice Tip:</span> Choose one short film. In your notebook, draw a plot diagram and label each part with events from the film. Submit your diagram to Google Classroom.</span></p>
+            </div>
         </section>
 
-        <!-- Poetry Section -->
+        <!-- ===== POETRY SECTION (WITH VIDEO 5: We Real Cool) ===== -->
         <section class="mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
             <div class="flex items-center space-x-3 mb-4">
                 <div class="bg-amber-500 text-white p-2 rounded-lg">
                     <i data-lucide="music" class="w-6 h-6"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-amber-900">Poetry: Rhyme & Meter</h2>
+                <h2 class="text-2xl font-bold text-amber-900">🎵 Poetry: Rhyme & Meter</h2>
             </div>
-            
+            <p class="text-amber-700 mb-4">Explore how poets create rhythm and music with words.</p>
+
+            <!-- Interactive Link -->
             <div class="mb-6">
-                <a href="https://wayground.com/library/videos/middle-school/7th-grade/ela/reading/literature/poetry/rhythm-and-meter" 
-                   target="_blank" 
-                   class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn mb-4">
+                <a href="https://wayground.com/library/videos/middle-school/7th-grade/ela/reading/literature/poetry/rhythm-and-meter"
+                   target="_blank"
+                   class="inline-flex items-center space-x-2 bg-amber-600 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-700 transition action-btn shadow-md">
                     <i data-lucide="play-circle" class="w-5 h-5"></i>
-                    <span>Rhythm & Meter Interactive</span>
+                    <span>🎼 Interactive: Rhythm & Meter (Quizizz)</span>
                 </a>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-sm">
-                <h3 class="font-bold text-lg mb-3 text-amber-800">"We Real Cool" by Gwendolyn Brooks</h3>
-                <div class="video-container mb-4">
-                    <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                            title="We Real Cool Animated" 
-                            allowfullscreen>
-                    </iframe>
-                </div>
-                <p class="text-sm text-slate-600 mb-4">Listen to the poem and identify the rhyme scheme and meter.</p>
+            <!-- Poem Analysis Card with Video 5: We Real Cool -->
+            <div class="poetry-card bg-white rounded-xl p-6 shadow-md border border-amber-100">
+                <h3 class="font-bold text-xl mb-3 text-amber-800 flex items-center gap-2"><i data-lucide="mic-2" class="w-5 h-5"></i> "We Real Cool" by Gwendolyn Brooks</h3>
                 
-                <!-- Add to Classroom button for poetry activity -->
-                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-green-700 transition action-btn">
-                    <i data-lucide="upload" class="w-4 h-4"></i>
-                    <span>Submit Poetry Analysis to Classroom</span>
-                </a>
+                <!-- Video 5: Piper (Now used for We Real Cool) -->
+                <div class="video-container mb-4 shadow-sm">
+                    <iframe src="https://www.youtube.com/embed/0USvSvhue70" title="We Real Cool - Poetry Analysis" allowfullscreen loading="lazy"></iframe>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-slate-50 p-3 rounded-lg">
+                        <p class="font-semibold text-slate-700">🎤 Listen For:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Rhyme scheme (AABB, ABAB?)</li>
+                            <li>Rhythm and stressed syllables</li>
+                            <li>The "tone" of the speakers</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg">
+                        <p class="font-semibold text-slate-700">📝 Activity:</p>
+                        <ul class="list-disc list-inside text-slate-600">
+                            <li>Write the rhyme scheme</li>
+                            <li>Tap the beat as you listen</li>
+                            <li>What feeling does the rhythm create?</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Submit button for poetry -->
+                <div class="mt-5 flex justify-center">
+                    <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-green-600 text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-green-700 transition action-btn shadow">
+                        <i data-lucide="upload" class="w-4 h-4"></i>
+                        <span>📤 Submit Poetry Analysis to Classroom</span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -238,29 +258,29 @@
                 <div class="bg-blue-500 text-white p-2 rounded-lg">
                     <i data-lucide="pen-tool" class="w-6 h-6"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-blue-900">Guided Practice</h2>
+                <h2 class="text-2xl font-bold text-blue-900">✍️ Guided Practice</h2>
             </div>
-            <p class="text-blue-800 mb-4">Complete the plot diagram and poetry analysis activities. Submit your answers on Google Classroom!</p>
+            <p class="text-blue-800 mb-4">Complete the plot diagram and poetry analysis activities. Submit your work via the buttons above or directly in Google Classroom.</p>
             <div class="flex flex-wrap gap-3">
-                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition action-btn">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition action-btn shadow">
                     <i data-lucide="external-link" class="w-5 h-5"></i>
                     <span>📝 OPEN GOOGLE CLASSROOM</span>
                 </a>
-                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn">
+                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn shadow opacity-80 cursor-not-allowed" onclick="alert('Worksheet download will be available soon. Please check Google Classroom for materials.'); return false;">
                     <i data-lucide="download" class="w-5 h-5"></i>
                     <span>📥 DOWNLOAD WORKSHEET</span>
                 </a>
             </div>
         </section>
-        
+
         <!-- Lesson Navigation -->
         <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-            <a href="week2.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+            <a href="week2.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn shadow">
                 <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Previous Lesson 2</span>
+                <span>← Lesson 2: Characters</span>
             </a>
-            <a href="week4.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
-                <span>Next Lesson 4</span>
+            <a href="week4.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn shadow">
+                <span>Lesson 4: Tone & Mood →</span>
                 <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
         </div>
@@ -268,8 +288,8 @@
 
     <footer class="gradient-bg text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <p class="font-semibold">Lesson 3: Plot, Rhyme & Meter - Grade 7 English Q1</p>
-            <p class="text-sm opacity-80 mt-2">Keep exploring stories and poems! 📚</p>
+            <p class="font-semibold">Lesson 3: Plot, Rhyme & Meter - Grade 7 English Quarter 1</p>
+            <p class="text-sm opacity-80 mt-2">Keep exploring the structure of stories and the music of poetry! 📚✨</p>
         </div>
     </footer>
 
