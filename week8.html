@@ -9,10 +9,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
         
-        body { font-family: 'Open Sans', sans-serif; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #f8fafc; color: #1e293b; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
         
-        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #fbbf24 100%); }
         .action-btn { transition: all 0.3s ease; }
         .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         
@@ -22,7 +22,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            background: #f1f5f9;
+            background: #e2e8f0;
         }
         .video-container iframe {
             position: absolute;
@@ -45,7 +45,7 @@
         .assessment-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #3b82f6;
+            border-color: #8b5cf6;
         }
         
         .step-card {
@@ -54,10 +54,19 @@
         .step-card:hover {
             transform: translateX(8px);
         }
+        
+        .video-card {
+            transition: all 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- Navigation -->
     <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
@@ -66,19 +75,20 @@
                     <span>Back to Home</span>
                 </a>
                 <div class="text-sm font-semibold bg-white20 px-4 py-2 rounded-full">
-                    Lesson 8 of 9
+                    Lesson 8 of 8
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-12">
+    <!-- Lesson Header -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white20 rounded-full mb-4">
                 <i data-lucide="pen-tool" class="w-12 h-12"></i>
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 8: Composition & Revision</h1>
-            <p class="text-lg opacity-90">Writing Techniques and Editing Strategies</p>
+            <p class="text-lg opacity-90">The Writing Process: From First Draft to Final Polish</p>
         </div>
     </header>
 
@@ -92,7 +102,7 @@
                     <i data-lucide="clipboard-list" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-bold text-lg text-blue-800 mb-1">📝 Pre-Test</h3>
-                <p class="text-sm text-blue-600 mb-3">Check what you already know</p>
+                <p class="text-sm text-blue-600 mb-3">Check what you know about writing</p>
                 <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
 
@@ -102,7 +112,7 @@
                     <i data-lucide="edit-3" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-bold text-lg text-purple-800 mb-1">📊 Assessment</h3>
-                <p class="text-sm text-purple-600 mb-3">Take the lesson quiz</p>
+                <p class="text-sm text-purple-600 mb-3">Test your understanding</p>
                 <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
 
@@ -117,7 +127,7 @@
             </a>
         </div>
 
-        <!-- Direct Link to Google Classroom for all activities -->
+        <!-- Direct Link to Google Classroom -->
         <section class="mb-8">
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                 <div class="flex items-center justify-between flex-wrap gap-4">
@@ -136,7 +146,6 @@
                     </span>
                 </div>
             </a>
-            <p class="text-center text-sm text-slate-500 mt-2">Click above to access all your activities in Google Classroom</p>
         </section>
 
         <!-- Video Resources -->
@@ -145,34 +154,71 @@
                 <div class="bg-red-100 p-2 rounded-lg">
                     <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-slate-800">Video Resources</h2>
+                <h2 class="text-2xl font-bold text-slate-800">🎬 Video Resources: The Writing Process</h2>
             </div>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Video 1: The Writing Process -->
+                <div class="video-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Writing Process" 
-                                allowfullscreen>
+                        <iframe src="https://www.youtube.com/embed/KGImUx4zg64" 
+                                title="The Writing Process" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen loading="lazy">
                         </iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">The Writing Process</h3>
-                        <p class="text-sm text-slate-600">From prewriting to publishing.</p>
+                        <h3 class="font-bold text-lg mb-1 text-indigo-600">✍️ The Writing Process</h3>
+                        <p class="text-sm text-slate-600">Learn the steps authors take to create a piece of writing: prewriting, drafting, revising, editing, and publishing.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Video 2: How to Revise Your Writing -->
+                <div class="video-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Revision Techniques" 
-                                allowfullscreen>
+                        <iframe src="https://www.youtube.com/embed/cAJ97CEaWHQ" 
+                                title="How to Revise Your Writing" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen loading="lazy">
                         </iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Revision Strategies</h3>
-                        <p class="text-sm text-slate-600">How to improve your first draft.</p>
+                        <h3 class="font-bold text-lg mb-1 text-purple-600">🔄 Revision Strategies</h3>
+                        <p class="text-sm text-slate-600">Practical techniques to improve your first draft and make your writing stronger and clearer.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference: Revision vs Editing -->
+        <section class="mb-8 bg-indigo-50 rounded-2xl p-6 border-2 border-indigo-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-indigo-600 text-white p-2 rounded-lg">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-900">📖 Revision vs. Editing: What's the Difference?</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-amber-500">
+                    <h3 class="font-bold text-lg text-amber-700 mb-2">🔄 Revision</h3>
+                    <p class="text-sm text-slate-600">"Re-vision" means seeing again. Focus on <span class="font-bold">content and structure</span>.</p>
+                    <ul class="list-disc list-inside text-sm text-slate-600 mt-2">
+                        <li>Adding or removing ideas</li>
+                        <li>Moving paragraphs</li>
+                        <li>Clarifying your message</li>
+                        <li>Improving word choice</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <h3 class="font-bold text-lg text-green-700 mb-2">✓ Editing</h3>
+                    <p class="text-sm text-slate-600">Focus on <span class="font-bold">correctness and polish</span>.</p>
+                    <ul class="list-disc list-inside text-sm text-slate-600 mt-2">
+                        <li>Fixing spelling errors</li>
+                        <li>Correcting grammar</li>
+                        <li>Checking punctuation</li>
+                        <li>Formatting properly</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -183,16 +229,16 @@
                 <div class="bg-indigo-600 text-white p-2 rounded-lg">
                     <i data-lucide="list-checks" class="w-6 h-6"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-indigo-900">Writing Process Steps</h2>
+                <h2 class="text-2xl font-bold text-indigo-900">📋 Writing Process Steps</h2>
             </div>
-            <p class="text-indigo-800 mb-4">Follow these steps to create your best work:</p>
+            <p class="text-indigo-800 mb-4">Follow these steps to create your best work. Remember, good writers <span class="font-bold">revise multiple times</span>!</p>
             
             <div class="space-y-3 mb-6">
                 <div class="step-card bg-white p-4 rounded-xl shadow-sm flex items-center space-x-4">
                     <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
                     <div>
                         <h4 class="font-bold text-slate-800">Prewriting</h4>
-                        <p class="text-sm text-slate-600">Brainstorm ideas and create an outline</p>
+                        <p class="text-sm text-slate-600">Brainstorm ideas, outline, plan your purpose and audience (from Lesson 7!)</p>
                     </div>
                 </div>
                 
@@ -200,7 +246,7 @@
                     <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
                     <div>
                         <h4 class="font-bold text-slate-800">Drafting</h4>
-                        <p class="text-sm text-slate-600">Write your first version</p>
+                        <p class="text-sm text-slate-600">Write your first version. Don't worry about perfection—just get ideas down!</p>
                     </div>
                 </div>
                 
@@ -208,7 +254,7 @@
                     <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
                     <div>
                         <h4 class="font-bold text-slate-800">Revising</h4>
-                        <p class="text-sm text-slate-600">Improve content and structure</p>
+                        <p class="text-sm text-slate-600">Improve content, structure, clarity. Add, cut, move, or change parts.</p>
                     </div>
                 </div>
                 
@@ -216,7 +262,7 @@
                     <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
                     <div>
                         <h4 class="font-bold text-slate-800">Editing</h4>
-                        <p class="text-sm text-slate-600">Fix grammar and spelling</p>
+                        <p class="text-sm text-slate-600">Fix grammar, spelling, punctuation, and formatting.</p>
                     </div>
                 </div>
                 
@@ -224,9 +270,14 @@
                     <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold">5</div>
                     <div>
                         <h4 class="font-bold text-slate-800">Publishing</h4>
-                        <p class="text-sm text-slate-600">Share your final work</p>
+                        <p class="text-sm text-slate-600">Share your final work with others (in your next step!)</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="bg-white p-4 rounded-xl shadow-sm mb-4">
+                <h3 class="font-bold text-indigo-600 mb-2">💡 Peer Review Tip</h3>
+                <p class="text-sm text-slate-600">When reviewing a classmate's work, be kind and specific. Start with what you like, then ask questions about parts that confuse you. "I really liked ____, but I was confused when ____."</p>
             </div>
             
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-indigo-500 text-white px-6 py-3 rounded-full font-bold hover:bg-indigo-600 transition action-btn">
@@ -241,15 +292,15 @@
                 <div class="bg-amber-500 text-white p-2 rounded-lg">
                     <i data-lucide="pen-tool" class="w-6 h-6"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-amber-900">Guided Practice</h2>
+                <h2 class="text-2xl font-bold text-amber-900">✍️ Guided Practice</h2>
             </div>
-            <p class="text-amber-800 mb-4">Apply the writing process to create your own composition. Then revise and edit your work.</p>
+            <p class="text-amber-800 mb-4">Apply the writing process to create your own composition. Write a first draft, then revise and edit it. Share your work for peer review!</p>
             <div class="flex flex-wrap gap-3">
-                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn shadow">
                     <i data-lucide="external-link" class="w-5 h-5"></i>
                     <span>📝 OPEN GOOGLE CLASSROOM</span>
                 </a>
-                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn">
+                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn shadow opacity-80 cursor-not-allowed" onclick="alert('Worksheet download will be available soon. Please check Google Classroom for materials.'); return false;">
                     <i data-lucide="download" class="w-5 h-5"></i>
                     <span>📥 DOWNLOAD WORKSHEET</span>
                 </a>
@@ -258,21 +309,20 @@
 
         <!-- Lesson Navigation -->
         <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-            <a href="week7.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+            <a href="week7.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn shadow">
                 <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Previous Lesson 7</span>
+                <span>← Lesson 7: Selecting Texts</span>
             </a>
-            <a href="week9.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
-                <span>Next Lesson 9</span>
-                <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </a>
+            <div class="flex items-center space-x-2 text-slate-400 px-6 py-3">
+                <span class="text-sm">End of Lessons</span>
+            </div>
         </div>
     </main>
 
     <footer class="gradient-bg text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <p class="font-semibold">Lesson 8: Composition & Revision | Grade 7 English Q1</p>
-            <p class="text-sm opacity-80 mt-2">Write, revise, and shine! ✍️</p>
+            <p class="font-semibold">Lesson 8: Composition & Revision - Grade 7 English Quarter 1</p>
+            <p class="text-sm opacity-80 mt-2">Write, revise, and shine! ✍️✨</p>
         </div>
     </footer>
 
