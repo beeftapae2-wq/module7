@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 5: Figures of Speech | Grade 7 English Q1</title>
+    <title>Lesson 5: Figures of Speech & Point of View | Grade 7 English Q1</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
         
-        body { font-family: 'Open Sans', sans-serif; }
+        body { font-family: 'Open Sans', sans-serif; background-color: #f8fafc; color: #1e293b; }
         h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
         
-        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+        .gradient-bg { background: linear-gradient(135deg, #f59e0b 0%, #f97316 50%, #fbbf24 100%); }
         .action-btn { transition: all 0.3s ease; }
         .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
         
@@ -22,7 +22,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            background: #f1f5f9;
+            background: #e2e8f0;
         }
         .video-container iframe {
             position: absolute;
@@ -45,19 +45,29 @@
         .assessment-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #3b82f6;
+            border-color: #f97316;
         }
         
         .figure-card {
             transition: all 0.3s ease;
         }
         .figure-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-card {
+            transition: all 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- Navigation -->
     <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
@@ -72,13 +82,14 @@
         </div>
     </nav>
 
+    <!-- Lesson Header -->
     <header class="bg-gradient-to-r from-amber-500 to-orange-600 text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white20 rounded-full mb-4">
                 <i data-lucide="sparkles" class="w-12 h-12"></i>
             </div>
-            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 5: Figures of Speech</h1>
-            <p class="text-lg opacity-90">Point of View, Maxims & Universal Truths</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 5: Figures of Speech & Point of View</h1>
+            <p class="text-lg opacity-90">Simile, Metaphor, Personification, Hyperbole, and Narrative Perspective</p>
         </div>
     </header>
 
@@ -92,7 +103,7 @@
                     <i data-lucide="clipboard-list" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-bold text-lg text-blue-800 mb-1">📝 Pre-Test</h3>
-                <p class="text-sm text-blue-600 mb-3">Check what you already know</p>
+                <p class="text-sm text-blue-600 mb-3">Check what you know about figures of speech</p>
                 <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
 
@@ -102,7 +113,7 @@
                     <i data-lucide="edit-3" class="w-8 h-8"></i>
                 </div>
                 <h3 class="font-bold text-lg text-purple-800 mb-1">📊 Assessment</h3>
-                <p class="text-sm text-purple-600 mb-3">Take the lesson quiz</p>
+                <p class="text-sm text-purple-600 mb-3">Test your understanding</p>
                 <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
             </a>
 
@@ -117,7 +128,7 @@
             </a>
         </div>
 
-        <!-- Direct Link to Google Classroom for all activities -->
+        <!-- Direct Link to Google Classroom -->
         <section class="mb-8">
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:scale-105">
                 <div class="flex items-center justify-between flex-wrap gap-4">
@@ -136,42 +147,103 @@
                     </span>
                 </div>
             </a>
-            <p class="text-center text-sm text-slate-500 mt-2">Click above to access all your activities in Google Classroom</p>
         </section>
 
-        <!-- Video Resources -->
+        <!-- Quick Reference: Figures of Speech -->
+        <section class="mb-8 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-amber-500 text-white p-2 rounded-lg">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-amber-900">📖 Common Figures of Speech</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="figure-card bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-500">
+                    <h3 class="font-bold text-lg text-blue-700 mb-2">✨ Simile</h3>
+                    <p class="text-sm text-slate-600">Comparison using "like" or "as"</p>
+                    <p class="text-xs text-slate-500 mt-1">Example: "Her smile was like the sun."</p>
+                </div>
+                <div class="figure-card bg-white p-4 rounded-xl shadow-sm border-l-4 border-green-500">
+                    <h3 class="font-bold text-lg text-green-700 mb-2">🌟 Metaphor</h3>
+                    <p class="text-sm text-slate-600">Direct comparison (says something IS something else)</p>
+                    <p class="text-xs text-slate-500 mt-1">Example: "The world is a stage."</p>
+                </div>
+                <div class="figure-card bg-white p-4 rounded-xl shadow-sm border-l-4 border-purple-500">
+                    <h3 class="font-bold text-lg text-purple-700 mb-2">🌬️ Personification</h3>
+                    <p class="text-sm text-slate-600">Giving human qualities to non-human things</p>
+                    <p class="text-xs text-slate-500 mt-1">Example: "The wind whispered through the trees."</p>
+                </div>
+                <div class="figure-card bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-500">
+                    <h3 class="font-bold text-lg text-red-700 mb-2">⚡ Hyperbole</h3>
+                    <p class="text-sm text-slate-600">Extreme exaggeration for effect</p>
+                    <p class="text-xs text-slate-500 mt-1">Example: "I've told you a million times."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Point of View Reference -->
+        <section class="mb-8 bg-indigo-50 rounded-2xl p-6 border-2 border-indigo-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-indigo-500 text-white p-2 rounded-lg">
+                    <i data-lucide="eye" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-900">👁️ Point of View (POV)</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-3">
+                <div class="bg-white p-3 rounded-lg text-center">
+                    <span class="font-bold text-indigo-600">First Person</span>
+                    <p class="text-xs text-slate-600">Uses "I, me, we"</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg text-center">
+                    <span class="font-bold text-indigo-600">Third Person Limited</span>
+                    <p class="text-xs text-slate-600">Follows one character's thoughts</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg text-center">
+                    <span class="font-bold text-indigo-600">Third Person Omniscient</span>
+                    <p class="text-xs text-slate-600">Knows all characters' thoughts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Resources - UPDATED WITH YOUR LINKS -->
         <section class="mb-12">
             <div class="flex items-center space-x-3 mb-6">
                 <div class="bg-red-100 p-2 rounded-lg">
                     <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-slate-800">Video Resources</h2>
+                <h2 class="text-2xl font-bold text-slate-800">🎬 Video Resources</h2>
             </div>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Video 1: Figures of Speech -->
+                <div class="video-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
+                        <iframe src="https://www.youtube.com/embed/98l2gZh-2X0" 
                                 title="Figures of Speech Explained" 
-                                allowfullscreen>
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen loading="lazy">
                         </iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Similes, Metaphors, Personification</h3>
-                        <p class="text-sm text-slate-600">Common figures of speech in literature.</p>
+                        <h3 class="font-bold text-lg mb-1 text-amber-700">📝 Figures of Speech</h3>
+                        <p class="text-sm text-slate-600">Learn about simile, metaphor, personification, and hyperbole with clear examples.</p>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- Video 2: Point of View -->
+                <div class="video-card bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/5A9QevUDFzU" 
-                                title="Point of View" 
-                                allowfullscreen>
+                        <iframe src="https://www.youtube.com/embed/B5vEfuLS2Qc" 
+                                title="Point of View in Literature" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen loading="lazy">
                         </iframe>
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Point of View in Literature</h3>
-                        <p class="text-sm text-slate-600">First person, third person limited, omniscient.</p>
+                        <h3 class="font-bold text-lg mb-1 text-indigo-700">👁️ Point of View Explained</h3>
+                        <p class="text-sm text-slate-600">First person, third person limited, and omniscient - how to identify narrative perspective.</p>
                     </div>
                 </div>
             </div>
@@ -185,38 +257,46 @@
                 </div>
                 <h2 class="text-2xl font-bold text-orange-900">Universal Truths & Maxims</h2>
             </div>
-            <p class="text-orange-800 mb-4">Explore wise sayings and universal truths from literature.</p>
+            <p class="text-orange-800 mb-4">Wise sayings that teach lessons about life and human nature.</p>
             <div class="grid md:grid-cols-2 gap-4 mb-4">
-                <div class="bg-white p-4 rounded-lg shadow-sm figure-card">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
                     <p class="italic text-slate-700">"The early bird catches the worm."</p>
-                    <p class="text-sm text-slate-500 mt-2">- English Proverb</p>
+                    <p class="text-xs text-slate-500 mt-1">Value: Hard work and being prepared</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm figure-card">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
                     <p class="italic text-slate-700">"A friend in need is a friend indeed."</p>
-                    <p class="text-sm text-slate-500 mt-2">- Traditional Maxim</p>
+                    <p class="text-xs text-slate-500 mt-1">Value: True friendship and loyalty</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="italic text-slate-700">"Daig ng maagap ang masipag."</p>
+                    <p class="text-xs text-slate-500 mt-1">Value: Being proactive beats being just hardworking</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                    <p class="italic text-slate-700">"Honesty is the best policy."</p>
+                    <p class="text-xs text-slate-500 mt-1">Value: Integrity and truthfulness</p>
                 </div>
             </div>
             <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition action-btn">
                 <i data-lucide="external-link" class="w-5 h-5"></i>
-                <span>📝 SHARE YOUR FAVORITE QUOTE ON CLASSROOM</span>
+                <span>📝 SHARE A MAXIM ON CLASSROOM</span>
             </a>
         </section>
 
-        <!-- Guided Practice -->
+        <!-- Guided Practice (No Extra Activity) -->
         <section class="mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
             <div class="flex items-center space-x-3 mb-4">
                 <div class="bg-amber-500 text-white p-2 rounded-lg">
                     <i data-lucide="pen-tool" class="w-6 h-6"></i>
                 </div>
-                <h2 class="text-2xl font-bold text-amber-900">Guided Practice</h2>
+                <h2 class="text-2xl font-bold text-amber-900">✍️ Guided Practice</h2>
             </div>
-            <p class="text-amber-800 mb-4">Complete the figures of speech activities. Identify and create your own examples!</p>
+            <p class="text-amber-800 mb-4">Complete the figures of speech and point of view activities in Google Classroom. Identify examples and create your own!</p>
             <div class="flex flex-wrap gap-3">
-                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn shadow">
                     <i data-lucide="external-link" class="w-5 h-5"></i>
                     <span>📝 OPEN GOOGLE CLASSROOM</span>
                 </a>
-                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn">
+                <a href="#" class="inline-flex items-center space-x-2 bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition action-btn shadow opacity-80 cursor-not-allowed" onclick="alert('Worksheet download will be available soon. Please check Google Classroom for materials.'); return false;">
                     <i data-lucide="download" class="w-5 h-5"></i>
                     <span>📥 DOWNLOAD WORKSHEET</span>
                 </a>
@@ -225,12 +305,12 @@
 
         <!-- Lesson Navigation -->
         <div class="flex justify-between items-center pt-8 border-t border-slate-200">
-            <a href="week4.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+            <a href="week4.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn shadow">
                 <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Previous Lesson 4</span>
+                <span>← Lesson 4: Tone & Mood</span>
             </a>
-            <a href="week6.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
-                <span>Next Lesson 6</span>
+            <a href="week6.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn shadow">
+                <span>Lesson 6: Context →</span>
                 <i data-lucide="arrow-right" class="w-5 h-5"></i>
             </a>
         </div>
@@ -238,8 +318,8 @@
 
     <footer class="gradient-bg text-white py-8 mt-12">
         <div class="container mx-auto px-4 text-center">
-            <p class="font-semibold">Lesson 5: Figures of Speech | Grade 7 English Q1</p>
-            <p class="text-sm opacity-80 mt-2">Discover the power of language! 📚</p>
+            <p class="font-semibold">Lesson 5: Figures of Speech & Point of View - Grade 7 English Quarter 1</p>
+            <p class="text-sm opacity-80 mt-2">Discover the power of figurative language and narrative voice! 📚✨</p>
         </div>
     </footer>
 
