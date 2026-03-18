@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Launch Grade 7 English Module</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            animation: gradientBG 15s ease infinite;
+            background-size: 400% 400%;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .launcher-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 3rem 2rem;
+            border-radius: 30px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transform: translateY(0);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .app-icon span {
+            font-size: 50px;
+            filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.2));
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #667eea;
+            border-radius: 50%;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            animation: progress 2s ease-in-out forwards;
+        }
+        
+        @keyframes progress {
+            to { width: 100%; }
+        }
+        
+        .manual-link {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+        
+        .manual-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 20px;
+            background: #f0f0ff;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .manual-link a:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .countdown {
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 15px 0;
+        }
+        
+        .footer-note {
+            margin-top: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="launcher-card">
+        <div class="app-icon">
+            <span>📚</span>
+        </div>
+        
+        <h1>Grade 7 English</h1>
+        <div class="subtitle">Quarter 1 • Module Launcher</div>
+        
+        <div class="loading-spinner"></div>
+        
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        
+        <div class="countdown" id="countdown">Opening in 2 seconds...</div>
+        
+        <div class="manual-link">
+            <a href="https://beeftapae2-wq.github.io/grade7englishmodule/" id="direct-link" target="_blank">
+                🔗 Click here if not redirected
+            </a>
+        </div>
+        
+        <div class="footer-note">
+            ⚡ This will open like an app • Save this page to your home screen
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        let secondsLeft = 2;
+        const countdownEl = document.getElementById('countdown');
+        const targetUrl = 'https://beeftapae2-wq.github.io/grade7englishmodule/';
+        
+        // Update countdown every second
+        const timer = setInterval(function() {
+            secondsLeft--;
+            if (secondsLeft > 0) {
+                countdownEl.textContent = `Opening in ${secondsLeft} second${secondsLeft !== 1 ? 's' : ''}...`;
+            } else {
+                countdownEl.textContent = 'Opening now...';
+                clearInterval(timer);
+            }
+        }, 1000);
+        
+        // Redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = targetUrl;
+        }, 2000);
+        
+        // Optional: Pre-click effect on the manual link
+        document.getElementById('direct-link').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05)';
+        });
+        
+        document.getElementById('direct-link').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
