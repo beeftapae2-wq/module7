@@ -29,18 +29,6 @@
             cursor: pointer;
         }
         
-        .action-btn { transition: all 0.3s ease; }
-        .action-btn:hover { transform: scale(1.05); }
-        
-        .hero-card {
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-            border: 2px solid #ffffff50;
-        }
-        .hero-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 25px 30px -5px rgba(99, 102, 241, 0.3);
-        }
-        
         .team-card { transition: all 0.3s ease; }
         .team-card:hover {
             transform: translateY(-5px);
@@ -78,7 +66,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Simplified) -->
     <header class="gradient-bg text-white py-12">
         <div class="container mx-auto px-4 text-center">
             <div class="inline-block p-3 bg-white/20 rounded-full mb-4">
@@ -86,52 +74,17 @@
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold mb-4">Asynchronous Class</h1>
             <h2 class="text-2xl md:text-3xl font-bold mb-4">Purposive Communication</h2>
-            <p class="text-lg max-w-2xl mx-auto opacity-90 mb-8">
-                Explore the art of effective communication. Start with Lesson 2 below.
+            <p class="text-lg max-w-2xl mx-auto opacity-90">
+                Explore the art of effective communication. Click a module below to begin.
             </p>
-            
-            <!-- Direct Canva Link Button - Start Lesson 2 -->
-            <a href="https://www.canva.com/design/DAHE3KZURN4/UGsLQJ-dyFZC5YzTYllrpA/view?utm_content=DAHE3KZURN4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf076b8be70" 
-               target="_blank" 
-               class="inline-flex items-center space-x-3 bg-white text-indigo-600 px-8 py-4 rounded-full font-bold hover:bg-indigo-50 transition action-btn shadow-xl text-lg mb-6">
-                <i data-lucide="play-circle" class="w-6 h-6"></i>
-                <span>📖 START LESSON 2</span>
-            </a>
-            
-            <p class="text-sm opacity-75">Click the button to access the interactive module. Other lessons will be unlocked gradually.</p>
         </div>
     </header>
-
-    <!-- Module Preview Card (Same Canva Link) -->
-    <section class="py-8">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <a href="https://www.canva.com/design/DAHE3KZURN4/UGsLQJ-dyFZC5YzTYllrpA/view?utm_content=DAHE3KZURN4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf076b8be70" 
-               target="_blank"
-               class="hero-card block bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl transition-all">
-                <div class="flex items-center justify-between flex-wrap gap-4">
-                    <div class="flex items-center space-x-4">
-                        <div class="bg-white/20 p-4 rounded-2xl">
-                            <i data-lucide="presentation" class="w-12 h-12"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold mb-1">📘 Lesson 2: Public Speaking & Speech Delivery</h2>
-                            <p class="opacity-90">Click to open the interactive presentation</p>
-                        </div>
-                    </div>
-                    <span class="bg-white text-indigo-600 px-6 py-3 rounded-full font-bold flex items-center space-x-2">
-                        <span>Open Module</span>
-                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                    </span>
-                </div>
-            </a>
-        </div>
-    </section>
 
     <!-- Modules Section (Lesson 1 omitted, Lessons 2-8 displayed) -->
     <section id="modules" class="py-12 bg-slate-100">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 text-indigo-600">📘 Course Modules</h2>
-            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">All lessons are currently locked. Lesson 2 is active — click the card to open the lesson page.</p>
+            <p class="text-center text-slate-600 mb-8 max-w-2xl mx-auto">Lesson 2 is open — click the card to start. Other modules will be unlocked later.</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <!-- Lesson 1 is omitted (left blank) -->
@@ -281,7 +234,7 @@
             <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">A collaborative project for Purposive Communication</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Team member cards (same names) -->
+                <!-- Team member cards -->
                 <div class="team-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 shadow-lg text-center">
                     <div class="w-24 h-24 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full mx-auto mb-4 flex items-center justify-center">
                         <span class="text-white text-3xl font-bold">JM</span>
@@ -341,13 +294,6 @@
             <p class="mb-2">Asynchronous Class | Purposive Communication</p>
             <p class="text-sm opacity-60">
                 Created by: Maniago, David, Alba, Balivia, Inventor
-            </p>
-            <p class="text-sm opacity-60 mt-2">
-                <a href="https://www.canva.com/design/DAHE3KZURN4/UGsLQJ-dyFZC5YzTYllrpA/view?utm_content=DAHE3KZURN4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf076b8be70" 
-                   target="_blank" 
-                   class="hover:underline">
-                    📘 Lesson 2 Interactive Module
-                </a>
             </p>
         </div>
     </footer>
