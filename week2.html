@@ -44,6 +44,25 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
             border-color: #8b5cf6;
         }
+        
+        /* Canva embed responsive container */
+        .canva-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            border-radius: 16px;
+            background: white;
+        }
+        .canva-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -75,6 +94,23 @@
     </header>
     
     <main class="container mx-auto px-4 py-8 max-w-5xl">
+        
+        <!-- CANVA WIDGET – INTERACTIVE PRESENTATION -->
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-purple-100 p-2 rounded-lg">
+                    <i data-lucide="presentation" class="w-6 h-6 text-purple-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">📘 Interactive Module</h2>
+            </div>
+            <div class="canva-container shadow-xl">
+                <iframe src="https://www.canva.com/design/DAHE3KZURN4/UGsLQJ-dyFZC5YzTYllrpA/view?embed" 
+                        allowfullscreen="allowfullscreen" 
+                        allow="fullscreen">
+                </iframe>
+            </div>
+            <p class="text-center text-sm text-slate-500 mt-3">Click the presentation to view full screen. Use arrows to navigate.</p>
+        </section>
         
         <!-- Introduction -->
         <section class="mb-12 bg-indigo-50 rounded-2xl p-6 border-2 border-indigo-200">
@@ -239,26 +275,10 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
-                        <tr>
-                            <td class="px-4 py-3 font-medium">Manuscript</td>
-                            <td class="px-4 py-3">Long, complex, or highly detailed messages</td>
-                            <td class="px-4 py-3">Maintaining eye contact and naturalness</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium">Memorized</td>
-                            <td class="px-4 py-3">Short speeches, contests, performances</td>
-                            <td class="px-4 py-3">Risk of forgetting lines; can sound robotic</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium">Extemporaneous</td>
-                            <td class="px-4 py-3">Classroom lectures, business presentations</td>
-                            <td class="px-4 py-3">Requires good outline and spontaneity</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 font-medium">Impromptu</td>
-                            <td class="px-4 py-3">Q&A sessions, meetings, informal settings</td>
-                            <td class="px-4 py-3">Limited time to organize thoughts</td>
-                        </tr>
+                        <tr><td class="px-4 py-3 font-medium">Manuscript</td><td class="px-4 py-3">Long, complex, or highly detailed messages</td><td class="px-4 py-3">Maintaining eye contact and naturalness</td></tr>
+                        <tr><td class="px-4 py-3 font-medium">Memorized</td><td class="px-4 py-3">Short speeches, contests, performances</td><td class="px-4 py-3">Risk of forgetting lines; can sound robotic</td></tr>
+                        <tr><td class="px-4 py-3 font-medium">Extemporaneous</td><td class="px-4 py-3">Classroom lectures, business presentations</td><td class="px-4 py-3">Requires good outline and spontaneity</td></tr>
+                        <tr><td class="px-4 py-3 font-medium">Impromptu</td><td class="px-4 py-3">Q&A sessions, meetings, informal settings</td><td class="px-4 py-3">Limited time to organize thoughts</td></tr>
                     </tbody>
                 </table>
             </div>
