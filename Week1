@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Conflict - Grade 7 English Q1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
+        
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Nunito', sans-serif; }
+        
+        .gradient-bg { background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #fbbf24 100%); }
+        .action-btn { transition: all 0.3s ease; }
+        .action-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #f1f5f9;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .bg-white20 {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .assessment-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .assessment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2 font-bold text-xl">
+                    <i data-lucide="arrow-left" class="w-6 h-6"></i>
+                    <span>Back to Home</span>
+                </a>
+                <div class="text-sm font-semibold bg-white20 px-4 py-2 rounded-full">
+                    Lesson 1 of 9
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Lesson Header -->
+    <header class="bg-gradient-to-r from-red-500 to-pink-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-block p-3 bg-white20 rounded-full mb-4">
+                <i data-lucide="swords" class="w-12 h-12"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold mb-2">Lesson 1: Conflict</h1>
+            <p class="text-lg opacity-90">Understanding the Four Types of Conflict: Character vs. Self, Character, Society, and Nature</p>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Assessment Widgets Row -->
+        <div class="grid md:grid-cols-3 gap-4 mb-8">
+            <!-- PRE-TEST -->
+            <a href="https://forms.gle/rdqEuUrL49hQErBh6" target="_blank" 
+               class="assessment-card bg-blue-50 border-2 border-blue-200 rounded-xl p-6 text-center hover:bg-blue-100 transition block">
+                <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="clipboard-list" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-blue-800 mb-1">📝 Pre-Test</h3>
+                <p class="text-sm text-blue-600 mb-3">Check what you already know about conflict</p>
+                <span class="inline-block bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
+            </a>
+
+            <!-- ASSESSMENT -->
+            <a href="https://forms.gle/iWrP7ZBChsyMoaZH9" target="_blank" 
+               class="assessment-card bg-purple-50 border-2 border-purple-200 rounded-xl p-6 text-center hover:bg-purple-100 transition block">
+                <div class="bg-purple-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="edit-3" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-purple-800 mb-1">📊 Assessment</h3>
+                <p class="text-sm text-purple-600 mb-3">Test your understanding of conflict types</p>
+                <span class="inline-block bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
+            </a>
+
+            <!-- REFLECTION -->
+            <a href="https://forms.gle/cKbxrJ44FWdV99FLA" target="_blank" 
+               class="assessment-card bg-teal-50 border-2 border-teal-200 rounded-xl p-6 text-center hover:bg-teal-100 transition block">
+                <div class="bg-teal-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <i data-lucide="message-circle" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-lg text-teal-800 mb-1">💭 Reflection</h3>
+                <p class="text-sm text-teal-600 mb-3">Share your thoughts on conflict in stories</p>
+                <span class="inline-block bg-teal-500 text-white px-4 py-2 rounded-full text-sm font-semibold">Click to Start</span>
+            </a>
+        </div>
+
+        <!-- Direct Link to Google Classroom -->
+        <section class="mb-8">
+            <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                <div class="flex items-center justify-between flex-wrap gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-white/20 p-3 rounded-full">
+                            <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold">📚 Access All Activities</h2>
+                            <p class="opacity-90">Pre-Test, Assessment, Reflection & More</p>
+                        </div>
+                    </div>
+                    <span class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold flex items-center space-x-2">
+                        <span>OPEN GOOGLE CLASSROOM</span>
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </span>
+                </div>
+            </a>
+            <p class="text-center text-sm text-slate-500 mt-2">Click above to access all your activities in Google Classroom</p>
+        </section>
+        
+        <!-- Video Resources -->
+        <section class="mb-12">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="bg-red-100 p-2 rounded-lg">
+                    <i data-lucide="youtube" class="w-6 h-6 text-red-600"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-slate-800">Conflict Video Examples</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Video 1: Types of Conflict Explained -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/2K3i2mjJe8g" 
+                                title="Types of Conflict Explained" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">📚 Types of Conflict Explained</h3>
+                        <p class="text-sm text-slate-600">An overview of the four main types of conflict in literature.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 2: Character vs Self (Tangled) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/nbcTaSAcH5A" 
+                                title="Character vs Self - Tangled" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">⚔️ Character vs Self (Tangled)</h3>
+                        <p class="text-sm text-slate-600">Watch Rapunzel's internal conflict as she struggles with guilt and the desire for freedom.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 3: Character vs Character (Frozen) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/AiX-WvMNDPc" 
+                                title="Character vs Character - Frozen" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">👥 Character vs Character (Frozen)</h3>
+                        <p class="text-sm text-slate-600">Watch the conflict between Anna and Elsa - a classic example of external conflict.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 4: Character vs Society (Mulan) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/3W6K9aLnmZ0" 
+                                title="Character vs Society - Mulan" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">🏛️ Character vs Society (Mulan)</h3>
+                        <p class="text-sm text-slate-600">See how Mulan defies society's expectations and traditions to follow her own path.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 5: Character vs Nature (Moana) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ibgkIobFl2U" 
+                                title="Character vs Nature - Moana" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">🌊 Character vs Nature (Moana)</h3>
+                        <p class="text-sm text-slate-600">Watch Moana battle against the powerful ocean and forces of nature.</p>
+                    </div>
+                </div>
+                
+                <!-- Video 6: Snack Attack (Pixar Short) -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/38y_1EWIE9I" 
+                                title="Snack Attack - Pixar Short" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-1">🍪 Snack Attack (Pixar Short)</h3>
+                        <p class="text-sm text-slate-600">Watch this short film and identify the conflict between characters. Can you spot the twist?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Conflict Types Quick Reference -->
+        <section class="mb-12 bg-blue-50 rounded-2xl p-6 border-2 border-blue-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-blue-500 text-white p-2 rounded-lg">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-blue-900">Four Types of Conflict</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg text-red-600 mb-2">⚔️ Character vs. Self</h3>
+                    <p class="text-slate-700">Internal struggle inside a character's mind. Examples: making a difficult choice, overcoming fear, dealing with guilt.</p>
+                    <p class="text-xs text-slate-500 mt-1">🎬 Example: Rapunzel in <i>Tangled</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg text-orange-600 mb-2">👥 Character vs. Character</h3>
+                    <p class="text-slate-700">Struggle between two or more characters. Examples: arguments, fights, competition.</p>
+                    <p class="text-xs text-slate-500 mt-1">🎬 Example: Anna vs Elsa in <i>Frozen</i></p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg text-purple-600 mb-2">🏛️ Character vs. Society</h3>
+                    <p class="text-slate-700">Struggle against rules, traditions, or beliefs of a group. Examples: standing up against unjust laws, breaking traditions.</p>
+                    <p class="text-xs text-slate-500 mt-1">🎬 Example: Mulan defying tradition</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm">
+                    <h3 class="font-bold text-lg text-green-600 mb-2">🌊 Character vs. Nature</h3>
+                    <p class="text-slate-700">Struggle against natural forces. Examples: surviving a storm, earthquake, wild animals, or harsh environment.</p>
+                    <p class="text-xs text-slate-500 mt-1">🎬 Example: Moana vs the ocean</p>
+                </div>
+            </div>
+            
+            <div class="mt-4 text-center">
+                <p class="text-blue-800 font-medium">🎯 Conflict reveals values. The choices characters make show what they truly care about.</p>
+            </div>
+        </section>
+        
+        <!-- Guided Practice -->
+        <section class="mb-12 bg-amber-50 rounded-2xl p-6 border-2 border-amber-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-amber-500 text-white p-2 rounded-lg">
+                    <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-amber-900">Guided Practice: Identify the Conflict</h2>
+            </div>
+            <p class="text-amber-800 mb-4">Watch the video examples above. For each one, identify the type of conflict and explain what value the character shows through their choices.</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-amber-500 text-white px-6 py-3 rounded-full font-bold hover:bg-amber-600 transition action-btn">
+                    <i data-lucide="external-link" class="w-5 h-5"></i>
+                    <span>📝 OPEN GOOGLE CLASSROOM</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Extra Activity -->
+        <section class="mb-12 bg-pink-50 rounded-2xl p-6 border-2 border-pink-200">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="bg-pink-500 text-white p-2 rounded-lg">
+                    <i data-lucide="palette" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-pink-900">Extra Activity: Conflict Comic Strip</h2>
+            </div>
+            <p class="text-pink-800 mb-4">Create a 4-panel comic strip showing a character facing one of the four types of conflict. Label which type you chose!</p>
+            <div class="flex flex-wrap gap-3">
+                <a href="https://classroom.google.com/c/ODQ3NzUwOTM4MTI5?cjc=3vfsthfe" target="_blank" class="inline-flex items-center space-x-2 bg-pink-500 text-white px-6 py-3 rounded-full font-bold hover:bg-pink-600 transition action-btn">
+                    <i data-lucide="upload" class="w-5 h-5"></i>
+                    <span>🎨 UPLOAD TO CLASSROOM</span>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Lesson Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-slate-200">
+            <a href="index.html" class="flex items-center space-x-2 text-slate-600 hover:text-blue-600 font-semibold">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span>Home</span>
+            </a>
+            <a href="week2.html" class="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition action-btn">
+                <span>Next Lesson 2: Characters</span>
+                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </main>
+    
+    <footer class="gradient-bg text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-semibold">Lesson 1: Conflict - Grade 7 English Quarter 1</p>
+            <p class="text-sm opacity-80 mt-2">Master the four types of conflict! 📚</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
